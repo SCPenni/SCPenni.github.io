@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshop Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .navbar {
+            background-color: #444;
+            overflow: hidden;
+            text-align: center;
+        }
+        
+        .navbar a {
+            display: inline-block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        
+        .navbar a:hover {
+            background-color: #555;
+        }
+        
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        
+        .sidebar {
+            width: 25%;
+            padding: 20px;
+            background-color: #ddd;
+        }
+        
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .sidebar li {
+            padding: 8px;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .main-content {
+            width: 75%;
+            padding: 20px;
+            background-color: #fff;
+        }
+        
+        .aside {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-top: 15px;
+            border-left: 5px solid #ccc;
+        }
+        
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        
+        .book-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .book-list li {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .icon {
+            width: 20px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        
+        .contact-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .contact-list li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Bookshop Website</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#catalog">Catalog</a>
+        <a href="#authors">Authors</a>
+        <a href="#genres">Genres</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Shop Menu</h2>
+            <ul>
+                <li><a href="#new-arrivals">New Arrivals</a></li>
+                <li><a href="#best-sellers">Best Sellers</a></li>
+                <li><a href="#discounts">Discounts</a></li>
+                <li><a href="#my-cart">My Cart</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="aside" id="home">
+                <h2>Home</h2>
+                <p>Here is the bookshop for more convenient use of all the books from the library catalog.</p>
+            </div>
+
+            <div class="aside" id="catalog">
+                <h2>Catalog</h2>
+                <p>Here you may add some books you like and write the genre, authors, volume of pages, then price.</p>
+                <ul class="book-list">
+                    <li>
+                        <strong>1. The Great Gatsby</strong><br> Author: F. Scott Fitzgerald<br> Genre: Classic<br> Pages: 180<br> Price: $12
+                    </li>
+                    <li>
+                        <strong>2. Dune</strong><br> Author: Frank Herbert<br> Genre: Science Fiction<br> Pages: 412<br> Price: $18
+                    </li>
+                    <li>
+                        <strong>3. The Hobbit</strong><br> Author: J.R.R. Tolkien<br> Genre: Fantasy<br> Pages: 310<br> Price: $15
+                    </li>
+                    <li>
+                        <strong>4. To Kill a Mockingbird</strong><br> Author: Harper Lee<br> Genre: Drama<br> Pages: 281<br> Price: $14
+                    </li>
+                    <li>
+                        <strong>5. Atomic Habits</strong><br> Author: James Clear<br> Genre: Self-help<br> Pages: 320<br> Price: $20
+                    </li>
+                    <li>
+                        <strong>6. The Silent Patient</strong><br> Author: Alex Michaelides<br> Genre: Thriller<br> Pages: 336<br> Price: $17
+                    </li>
+                    <li>
+                        <strong>7. Becoming</strong><br> Author: Michelle Obama<br> Genre: Biography<br> Pages: 448<br> Price: $22
+                    </li>
+                    <li>
+                        <strong>8. The Alchemist</strong><br> Author: Paulo Coelho<br> Genre: Adventure<br> Pages: 208<br> Price: $13
+                    </li>
+                    <li>
+                        <strong>9. Sapiens</strong><br> Author: Yuval Noah Harari<br> Genre: History<br> Pages: 443<br> Price: $21
+                    </li>
+                    <li>
+                        <strong>10. The Catcher in the Rye</strong><br> Author: J.D. Salinger<br> Genre: Coming-of-age<br> Pages: 277<br> Price: $16
+                    </li>
+                </ul>
+            </div>
+
+            <div class="aside" id="authors">
+                <h2>Authors</h2>
+                <ul>
+                    <li>F. Scott Fitzgerald</li>
+                    <li>Frank Herbert</li>
+                    <li>J.R.R. Tolkien</li>
+                    <li>Harper Lee</li>
+                    <li>James Clear</li>
+                    <li>Alex Michaelides</li>
+                    <li>Michelle Obama</li>
+                    <li>Paulo Coelho</li>
+                    <li>Yuval Noah Harari</li>
+                    <li>J.D. Salinger</li>
+                </ul>
+            </div>
+
+            <div class="aside" id="genres">
+                <h2>Genres</h2>
+                <ul>
+                    <li>Classic</li>
+                    <li>Science Fiction</li>
+                    <li>Fantasy</li>
+                    <li>Drama</li>
+                    <li>Self-help</li>
+                    <li>Thriller</li>
+                    <li>Biography</li>
+                    <li>Adventure</li>
+                    <li>History</li>
+                    <li>Coming-of-age</li>
+                </ul>
+            </div>
+
+            <div class="aside" id="contact">
+                <h2>Contact</h2>
+                <ul class="contact-list">
+                    <li>
+                        <img class="icon" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f426.svg" alt="X"> X: <strong>ICeCUbe</strong>
+                    </li>
+                    <li>
+                        <img class="icon" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4e8.svg" alt="Telegram"> Telegram: <strong>ICeCUbe</strong>
+                    </li>
+                    <li>
+                        <img class="icon" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f47e.svg" alt="Instagram"> Instagram: <strong>ICeCUbe</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; just for sure!!!</p>
+    </div>
+</body>
+<!-- ...existing code... -->
+
+</html>
