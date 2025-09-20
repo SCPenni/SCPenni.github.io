@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and Forms</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        /* Page Heading Styling with ID Selector */
+        
+        #page-heading {
+            color: #333;
+            font-size: 2.5em;
+            border-bottom: 2px solid #555;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        /* Table Styling */
+        
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        /* Table Header Styling */
+        
+        th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        /* Table Cells Styling */
+        
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        /* Alternate Row Colors */
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        /* Highlight Row Styling with a Class */
+        
+        .highlight-row {
+            background-color: #ffeb3b !important;
+            font-weight: bold;
+        }
+        /* Form Styling */
+        
+        .form-container {
+            width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        /* Style for all form elements */
+        
+        .form-container label,
+        .form-container input,
+        .form-container select,
+        .form-container textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        /* Bold labels */
+        
+        .form-container label {
+            font-weight: bold;
+        }
+        /* Consistent styling for inputs and textarea */
+        
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container select,
+        .form-container textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        /* Radio button styling */
+        
+        .form-container input[type="radio"] {
+            display: inline-block;
+            width: auto;
+            margin-right: 5px;
+        }
+        /* Submit button styling with ID Selector */
+        
+        #submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        /* Submit button hover effect */
+        
+        #submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="page-heading">Student Grades Report</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>Math</td>
+                <td>A</td>
+            </tr>
+            <tr class="highlight-row">
+                <td>Bob</td>
+                <td>Physics</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>Chemistry</td>
+                <td>A-</td>
+            </tr>
+            <tr>
+                <td>Diana</td>
+                <td>History</td>
+                <td>B</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <div class="form-container">
+        <h2>Feedback Form</h2>
+        <form action="#" method="post">
+            <label for="name"><b>Name:</b></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="role"><b>Role:</b></label>
+            <select id="role" name="role">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="other">Other</option>
+            </select>
+
+            <p><b>Are you satisfied?</b></p>
+            <input type="radio" id="yes" name="satisfaction" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="satisfaction" value="no">
+            <label for="no">No</label>
+
+            <label for="comments"><b>Comments:</b></label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <button type="submit" id="submit-btn">Submit Feedback</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
