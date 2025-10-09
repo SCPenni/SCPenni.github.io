@@ -2,68 +2,229 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Contact Form</title>
-    <style>
-        body {
-            background: #f5f5f5;
-            font-family: Arial, sans-serif;
-        }
-        
-        .contact-form {
-            background: #fff;
-            max-width: 400px;
-            margin: 60px auto;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px #222;
-        }
-        
-        .contact-form h2 {
-            margin-bottom: 18px;
-        }
-        
-        .contact-form label {
-            display: block;
-            margin-top: 12px;
-        }
-        
-        .contact-form input {
-            width: 100%;
-            padding: 8px;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-            margin-top: 5px;
-        }
-        
-        .contact-form button {
-            margin-top: 18px;
-            background: #222;
-            color: #fff;
-            border: none;
-            border-radius: 6px;
-            padding: 10px 20px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        
-        .contact-form button:hover {
-            background: #444;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel='stylesheet' type='text/css' media='screen' href='form.css'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+    <!-- bootstrap links -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <form class="contact-form" onsubmit="event.preventDefault(); this.reset();">
-        <h2>Contact Us</h2>
-        <label>Email:</label>
-        <input type="email" required>
-        <label>Telephone:</label>
-        <input type="tel" required>
-        <label>Full Name:</label>
-        <input type="text" required>
-        <button type="submit">Submit</button>
-    </form>
+    <!-- Navbar  -->
+
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #a992d4;">
+        <a class="navbar-brand" href="#">Chopin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="mid.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chronology.html">Chronology</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Page -->
+    <div class="container my-5">
+        <div class="row g-4">
+
+            <!-- Appointment Form -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-sm p-4 h-100">
+                    <h4 class="mb-3 text-center">Book Appointment</h4>
+
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your full name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" placeholder="Enter your phone number">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <label class="form-label">Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label">Time</label>
+                                <input type="time" class="form-control">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <h6 class="text-muted">Address Details</h6>
+                        <div class="row g-2">
+                            <div class="col-6"><input type="text" class="form-control" placeholder="Area"></div>
+                            <div class="col-6"><input type="text" class="form-control" placeholder="City"></div>
+                            <div class="col-6"><input type="text" class="form-control" placeholder="State"></div>
+                            <div class="col-6"><input type="text" class="form-control" placeholder="Post Code"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 mt-3">Book Appointment</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- ChatBox Form -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-sm p-4 h-100">
+                    <h4 class="mb-3 text-center">Let's Chat? - Online</h4>
+
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Your Name</label>
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="example@domain.com">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="4" placeholder="Explain your queries"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+
+                    <div class="text-center mt-3">
+                        <button class="btn btn-outline-primary rounded-circle me-2"><i class="bi bi-x"></i></button>
+                        <button class="btn btn-outline-primary rounded-circle"><i class="bi bi-chat-dots"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- File Upload Form -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-sm p-4 h-100">
+                    <h4 class="mb-3 text-center">Send Files</h4>
+
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Send files to this email:</label>
+                            <input type="email" class="form-control" placeholder="example@gmail.com">
+                        </div>
+
+                        <div class="border border-2 border-dashed rounded p-4 text-center mb-3" style="border-style: dashed;">
+                            <p class="mb-1">Drop files here</p>
+                            <p class="text-muted small">Or</p>
+                            <button type="button" class="btn btn-outline-primary btn-sm">Browse</button>
+                        </div>
+
+                        <div class="mb-2 d-flex justify-content-between align-items-center border rounded p-2">
+                            <span>banner-design.png</span>
+                            <button type="button" class="btn btn-sm btn-outline-danger">x</button>
+                        </div>
+
+                        <div class="mb-2 d-flex justify-content-between align-items-center border rounded p-2">
+                            <span>template-file.zip</span>
+                            <div class="progress w-50 ms-2">
+                                <div class="progress-bar" style="width: 60%;"></div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 mt-3">Send File</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <!-- Footer -->
+    <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- About Section -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h5 class="text-uppercase mb-3">About This Site</h5>
+                    <p>
+                        This website is dedicated to the life, works, and legacy of <strong>Frédéric Chopin</strong> — one of the greatest composers and pianists of the Romantic era.
+                    </p>
+                    <p>Explore his music, history, and influence through curated content and galleries.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h5 class="text-uppercase mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">🏠 Home</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none">🎵 About</a></li>
+                        <li><a href="chronology.html" class="text-light text-decoration-none">📅 Chronology</a></li>
+                        <li><a href="gallery.html" class="text-light text-decoration-none">🖼️ Gallery</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">✉️ Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h5 class="text-uppercase mb-3">Contact</h5>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i>Warsaw, Poland</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i>info@chopin-legacy.com</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i>+48 123 456 789</p>
+
+                    <div class="mt-3">
+                        <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary mt-4">
+
+            <!-- Copyright Bar -->
+            <div class="text-center small">
+                © <span id="year"></span> Chopin Legacy | Designed for educational use only.
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Optional JS to auto-update year -->
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+
 </body>
 
 </html>
