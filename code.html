@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Introduction & DOM Manipulation Tasks</title>
+    <script src="cod.js"></script>
+</head>
+
+<body>
+
+    <h1>Part1 Intro</h1>
+    <p>
+        <strong>Task 0</strong> and <strong>Task 1</strong> results are printed in the browser's <strong>Console</strong> (Press F12). An alert will also pop up.
+    </p>
+
+    <hr>
+
+    <h1>Part 2. DOM Manipulation</h1>
+
+    <h2>Task 2. Changing Content</h2>
+    <p id="content-paragraph">This is the original paragraph text.</p>
+    <button id="change-text-btn">Change Text</button>
+
+    <hr>
+
+    <h2>Task 3. Changing Styles</h2>
+    <div id="style-container">
+        <p>This is the content inside the style container.</p>
+    </div>
+    <button id="change-bg-btn">Change Background Color</button>
+    <button id="change-font-btn">Change Font Size</button>
+
+    <hr>
+
+    <h2>Creating & Removing </h2>
+    <ul id="list-for-items">
+        <li>Initial Item 1</li>
+        <li>Initial Item 2</li>
+    </ul>
+    <button id="add-item-btn">Add Item</button>
+    <button id="remove-item-btn">Remove Last Item</button>
+
+    <hr>
+
+    <h1>Part 3. Events</h1>
+
+    <h2>Task 5. Mouse Events</h2>
+    <div id="colorBox">Mouse Over Me</div>
+
+    <hr>
+
+    <h2>Task 6. Keyboard Events</h2>
+    <input type="text" id="key-input" placeholder="Type something here">
+    <p>Current Input Value: <span id="output-value"></span></p>
+
+    <hr>
+
+    <h2>Task 7. Form Validation (Optional)</h2>
+    <form id="validation-form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <button type="submit">Submit Form</button>
+        <p id="error-message"></p>
+    </form>
+
+    <hr>
+
+    <h1>To-Do List</h1>
+
+    <h2>Task 8. Build a To-Do App</h2>
+    <input type="text" id="task-input" placeholder="New task...">
+    <button id="add-task-btn">Add Task</button>
+    <ul id="task-list">
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
