@@ -1,126 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>My First Webpage</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete jQuery Assignment</title>
+
+    <!-- Include jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <h1>Yermekbay Nurdaulet</h1>
-    <h2>MT-2405</h2>
-    <hr>
-    <h3>About Me</h3>
-    <p>
-        So I'm 18 years old student that aiming to be animator in multuplication that is why i chose this curse of media technology.I am not so well with the programming languages but i am not the beginner in here and i already have learned the (C+ , C# , Java(OOP)
-        , Python ) list of languages. Next will be the porgrams oriented in the film making i am kinda interested and learned some basic skills in here too.
-    </p>
+    <h1>jQuery Complete Assignment</h1>
 
-    <h3> My hobbies</h3>
-    <hr>
-    <ol>
-        <li>Football fun LFC</li>
-        <li>Drawing </li>
-        <li>Sleeping</li>
-        <li>Reading</li>
-        <li>Films and Anime</li>
-    </ol>
+    <!-- PART 1: GETTING STARTED -->
+    <div class="section">
+        <h2>Part 1: Getting Started with jQuery</h2>
 
-    <h3>My favourite Websites</h3>
-    <ul>
-        <li><a href="https://www.canva.com/ru_ru/?ysclid=mff93njk5w558071270" target="_blank">canva</a></li>
-        <li><a href="https://monkeytype.com/" target="_blank">monkeytype</a></li>
-        <li><a href="https://stepik.org/catalog/153" target="_blank">stepik</a></li>
-    </ul>
-
-    <h3>My self</h3>
-    <img src="Nurdaulet.jpg" alt="ava GitHub ps = qbrgpqbpg1243" width="200" height="200">
-
-    <h3>Just for interest</h3>
-    <button>Click Me</button>
-    <hr>
-    <div>
-        <table border="3">
-            <thead>
-                <tr>
-                    <th>Subject</th>
-                    <th>Day</th>
-                    <th>Time</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>OS(online)</td>
-                    <td>Monday</td>
-                    <td>10:00 - 11:50</td>
-                </tr>
-                <tr>
-                    <td>OS(online)</td>
-                    <td>Tuesday</td>
-                    <td>8:00-9:50</td>
-                </tr>
-                <tr>
-                    <td>OS(online)</td>
-                    <td>Wednesday</td>
-                    <td>11:00-11:50</td>
-                </tr>
-                <tr>
-                    <td>Screenwriting</td>
-                    <td>Thursday</td>
-                    <td>17:00-18:50</td>
-                </tr>
-                <tr>
-                    <td>WEB</td>
-                    <td>Friday</td>
-                    <td>13:00-14:50</td>
-                </tr>
-                <tr>
-                    <td>free all day</td>
-                    <td>Saturday</td>
-                    <td>frea all day</td>
-                </tr>
-                <tr>
-                    <td>free</td>
-                    <td>Sunday</td>
-                    <td>free </td>
-                </tr>
-            </tbody>
-        </table>
+        <!-- Task 1: Selectors & CSS -->
+        <h3>Task 1: Selectors & CSS</h3>
+        <p id="para1">Original paragraph text</p>
+        <div class="myClass">Original div content</div>
+        <span>Original span</span>
+        <button id="changeContentBtn">Change Content & Styles</button>
     </div>
 
-    <h3>Emoji</h3>
-    <p>
-        Here is bad news 😢 since i have seen this schedule 👾 and now i am looking for the space between the time that i have after that 🫠
-    </p>
-    <h3>Forms</h3>
-    <hr>
-    <div>
+    <!-- PART 2: JQUERY EFFECTS -->
+    <div class="section">
+        <h2>Part 2: jQuery Effects</h2>
+
+        <!-- Task 2: Visibility Methods -->
+        <h3>Task 2: Hide, Show, Toggle</h3>
+        <p id="visibilityPara">This text can be hidden or shown</p>
+        <button id="hideBtn">Hide</button>
+        <button id="showBtn">Show</button>
+        <button id="toggleBtn">Toggle</button>
+
+        <!-- Task 3: Fade Methods -->
+        <h3>Task 3: Fade Effects</h3>
+        <img id="myImage" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/15e69a94715285.5e85b97a0795e.jpg" width="100" alt="Sample Image">
+        <button id="fadeInBtn">Fade In</button>
+        <button id="fadeOutBtn">Fade Out</button>
+        <button id="fadeToggleBtn">Fade Toggle</button>
+
+        <!-- Task 4: Slide Methods -->
+        <h3>Task 4: Slide Effects</h3>
+        <button id="slideUpBtn">Slide Up</button>
+        <button id="slideDownBtn">Slide Down</button>
+        <button id="slideToggleBtn">Slide Toggle</button>
+        <div id="panel">
+            <h4>Collapsible Panel</h4>
+            <p>This content can slide up and down smoothly.</p>
+        </div>
+    </div>
+
+    <!-- PART 3: DOM MANIPULATION -->
+    <div class="section">
+        <h2>Part 3: DOM Manipulation with jQuery</h2>
+
+        <!-- Task 5: Add & Remove Elements -->
+        <h3>Task 5: Add & Remove Elements</h3>
+        <ul id="myList">
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+        <button id="addBtn">Add Item</button>
+        <button id="prependBtn">Add Item at Start</button>
+        <button id="removeBtn">Remove Last Item</button>
+
+        <!-- Task 6: Modifying Attributes -->
+        <h3>Task 6: Modifying Attributes</h3>
+        <img id="changeableImg" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/15e69a94715285.5e85b97a0795e.jpg" width="100" alt="Image 1">
+        <button id="changeImgBtn">Change Image</button>
+        <br>
+        <a id="myLink" href="https://www.chess.com/ru" width="100" target="_blank">Example Link</a>
+        <button id="changeLinkBtn">Change Link to Google</button>
+
+        <!-- Task 7: Form Interaction -->
+        <h3>Task 7: Form Interaction</h3>
         <form>
-            <table>
-                <li><label for="name" class="block text-lg font-medium mb-1">Name</label></li>
-                <input type="text" id="name" name="name">
-                <br>
-
-
-                <li><label for="email" class="block text-lg font-medium mb-1">Email</label></li>
-                <input type="email" id="email" name="email">
-                <br>
-
-
-                <li><label for="fav-color" class="block text-lg font-medium mb-1">Favorite Color</label></li>
-                <input type="color" id="fav-color" name="fav-color">
-                <br>
-
-                <li><button type="submit">Submit</button></li>
-            </table>
+            <label>Name: <input type="text" id="nameInput" placeholder="Enter your name"></label>
+            <label>Email: <input type="email" id="emailInput" placeholder="Enter your email"></label>
         </form>
+        <div id="output">
+            <p><strong>Name:</strong> <span id="nameDisplay">Type above...</span></p>
+            <p><strong>Email:</strong> <span id="emailDisplay">Type above...</span></p>
+        </div>
     </div>
 
+    <!-- PART 4: ANIMATIONS -->
+    <div class="section">
+        <h2>Part 4: Animations</h2>
+
+        <!-- Task 8: Basic Animation -->
+        <h3>Task 8: Basic Animation</h3>
+        <div id="box"></div>
+        <button id="basicAnimateBtn">Animate (Size & Position)</button>
+        <button id="resetBoxBtn">Reset Box</button>
+
+        <!-- Task 9: Sequential Animations -->
+        <h3>Task 9: Sequential Animations</h3>
+        <button id="sequentialBtn">Sequential Animation (Right → Down → Shrink → Return)</button>
+
+        <!-- Task 10: Combined Animation -->
+        <h3>Task 10: Combined Animation</h3>
+        <button id="combinedBtn">Combined Animation (All at Once)</button>
+    </div>
+
+    <!-- PART 5: MINI PROJECT -->
+    <div class="section">
+        <h2>Part 5: Mini Project - Accordion Menu</h2>
+
+        <h3>Task 11: Interactive Accordion</h3>
+        <div id="accordion">
+            <div class="accordion-header">Section 1: jQuery Basics</div>
+            <div class="accordion-content">
+                <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, and animation much simpler.</p>
+            </div>
+
+            <div class="accordion-header">Section 2: DOM Manipulation</div>
+            <div class="accordion-content">
+                <p>jQuery makes it easy to select elements, create new elements, modify existing ones, and traverse the DOM tree with simple, cross-browser compatible code.</p>
+            </div>
+
+            <div class="accordion-header">Section 3: Effects & Animations</div>
+            <div class="accordion-content">
+                <p>jQuery provides powerful methods for creating smooth animations and effects, including fading, sliding, and custom animations with the animate() method.</p>
+            </div>
+
+            <div class="accordion-header">Section 4: Event Handling</div>
+            <div class="accordion-content">
+                <p>jQuery simplifies event handling with methods like .click(), .hover(), and .on(). You can easily respond to user interactions across all browsers.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
 
 </body>
 
